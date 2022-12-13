@@ -3,11 +3,40 @@
 <html>
 
 <head>
+	<title>Rock,Paper,Scissors</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	<input id = "game-number" placeholder ="Enter game turns" data-ns-test ="game-number" >
+	<button id = "play" type="button" data-ns-test="play-game">Play!</button>
+
+	<section id="scoreboard">
+		<div class="score" data-ns-test="user-points">Player score: <span id="player">0</span></div>
+		<div class="score" data-ns-test="computer-points">Computer score:<span id="computer">0</span></div>
+		<div class="score" data-ns-test="rounds-left">Turns left: <span id="turns">0</span></div>
+</section>
+
+	<section id = "selection">
+
+		<button type="button" id="rock"data-ns-test="rock"><img class="images" src ="https://thumbs.dreamstime.com/b/flirty-japanese-cartoon-rock-digital-illustration-116946145.jpg"></button>
+		<button type="button" id ="paper"data-ns-test="paper"><img class="images" src ="https://thumbs.dreamstime.com/b/paper-sheet-bent-object-design-doodle-hand-drawn-cartoon-vector-illustration-174526361.jpg"></button>
+		<button type="button" id ="scissors"data-ns-test="scissors"><img class="images" src ="https://img.freepik.com/premium-vector/cute-scissors-vector-hand-drawn-cartoon-kawaii-character-illustration-icon_464314-1813.jpg?w=2000"></button>
+		
+	</section>
+
+
+	<div data-ns-test="computer-choose"> Computer<span id="computerchoose"></span>Won</div>
+
+	<section>
+		<div data-ns-test="round-result"> <span id="roundwinner"></span>Won</div>
+		<div data-ns-test="game-result"> <span id="gamewinner"></span>Won</div>
+	</section>
+
+
+
+
+
     <script type="text/javascript" src="./script.js">
 </script>
 

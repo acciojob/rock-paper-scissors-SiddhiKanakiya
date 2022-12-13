@@ -1,2 +1,44 @@
+/* Desigining the input and button */
+*{
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+button{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding:5px
+}
 
-/* Your CSS Code here. */
+/* Desigining the score board */
+
+#scoreboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  
+}
+.score{
+    display: inline-block;
+}
+
+/* Designing the rock paper scissors */
+
+.images{
+    height: 200px;
+    width: 200px;
+    
+}
+
+#selection{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-content: center;
+}
+
+
+
+
